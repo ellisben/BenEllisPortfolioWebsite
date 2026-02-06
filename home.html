@@ -1,0 +1,182 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Ellis — Creative Coder</title>
+    <meta name="description" content="Creative coder from Halifax studying Creative Computing at University of Salford">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+<nav class="nav-fixed" id="main-nav">
+    <div class="nav-container">
+        <a href="home.html" class="logo" aria-label="Home">B.E</a>
+        
+        <!-- Add this hamburger button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-links" id="nav-links">
+            <li><a href="home.html" class="nav-link">HOME</a></li>
+            <li><a href="work.html" class="nav-link">WORK</a></li>
+            <li><a href="about.html" class="nav-link">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <main id="main-content">
+        <section class="hero">
+            <h1 class="hero-title">BEN ELLIS</h1>
+        </section>
+
+        <section class="editorial-grid" id="work-preview">
+            <div class="grid-cell what-i-do">
+                <h2 class="section-label">WHAT I DO</h2>
+                <ul class="services-list">
+                    <li>GENERATIVE ART</li>
+                    <li>CREATIVE CODING</li>
+                    <li>WEB DEVELOPMENT</li>
+                    <li>DATA VISUALIZATION</li>
+                    <li>INTERACTIVE DESIGN</li>
+                    <li>PROTOTYPING</li>
+                </ul>
+            </div>
+
+<div class="grid-cell news-carousel">
+    <div class="carousel-header">
+        <h2 class="section-label">NOTES</h2>
+        <div class="carousel-controls">
+            <button class="carousel-btn" data-direction="prev" aria-label="Previous note">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </button>
+            <button class="carousel-btn" data-direction="next" aria-label="Next note">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="carousel-content">
+        <div class="carousel-track">
+            <article class="carousel-item active">
+                <h3 class="carousel-title">Machine learning theory & Neural networks</h3>
+                <p class="carousel-meta" onclick="toggleContent(this)">3 MIN READ</p>
+                <div class="carousel-content-text">
+                    Throughout the first 2 weeks of my Artifical Intelligence module, I have been learning about the theory behind machine learning and neural networks.
+                    </br></br>Defining machine learning - Tom Mitchell presents a key definition: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
+                    <br></br>FORMULA:<br> Data (input) —> guess = output (prediction) —-> feedback —> new guess (= repeat) etc. 
+                    <br></br>We understood simple examples of Neural Networks, and how they are used to make predictions based on input data.
+                    <br></br>Neural Networks are made up of layers of nodes. Each node takes in multiple inputs, applies weights to them, sums them up, and passes the result through an activation function to produce an output.
+                    <br></br><a href ="https://nn-vis.noelith.dev/">Neural Networks Visualised</a>
+
+                    
+                </div>
+            </article>
+            <article class="carousel-item">
+                <h3 class="carousel-title">Routing & Building an API endpoint</h3>
+                <p class="carousel-meta" onclick="toggleContent(this)">4 MIN READ</p>
+                <div class="carousel-content-text">
+                    Full-stack Module - Week 2
+                    <br></br>In our first 2 weeks of this module, we have been introduced to using node.js and express.js to build API endpoints and handle routing.
+                    To serve a web-page from our server we need to provide an index.html file in a public directory.
+                    We first call .use() on our app variable and pass express.static() to the use() function. Express.static() passes static files to our application.
+                    To pass a collection of files to the client side, we can crearte a 'public' folder which contains our static files such as index.html.
+                    <br></br>In order to communicate with our express server we need to create an API endpoint. This is done using app.get() method.
+                    The req parameter contains information about the request made to the server, such as query parameters, headers, and body data.
+                    <br></br>Routes - Routes are how data gets sent to and from the server and the client.
+                    A route can either be a GET or POST request. GET requests are used to retrieve data from the server, while POST requests are used to send data to the server.
+                    <br></br><a href ="https://nodejs.org/docs/latest/api/">Node Documentation</a><br><a href ="https://expressjs.com/">Express Documentation</a>
+                </div>
+            </article>
+            <article class="carousel-item">
+                <h3 class="carousel-title">Exploring a brief history of AI</h3>
+                <p class="carousel-meta" onclick="toggleContent(this)">3 MIN READ</p>
+                <div class="carousel-content-text">
+                    ■ (1936) Turing, "On Computable Numbers, with an Application to the Entscheidungsproblem" – computer decisions
+                    </br>■ (1956) Dartmouth Summer Project on AI, incl. Claude Shannon, John McCarthy, Marvin Minsky, funded by US military – trying to code concepts and generalizations
+                    </br>■ (1952) Christopher Strachey, Love Letters – plays with the idea of appearing human-like
+                    </br>■ (1957) Frank Rosenblatt, perceptron: electronic device able to "sense" and "learn from" environment – sensing and neural networks
+                    </br>■ (1964-67) Joseph Weizenbaum, ELIZA – attempt to refute the idea of appearing human-like
+                    </br>■ (1980) John Searle, Chinese room experiment – refuting the idea of appearing human-like
+                    </br>■ (1996) IBM's Deep Blue expert system defeats chess world champion Gary Kasparov – meanwhile, machine learning grows as a field
+                    </br>■ (2015) AlphaGo, machine learning-based, defeats Go master Fan Hui
+                    </br>■ (2017) "Attention is all you need": transformer architecture of machine learning
+                    </br>■ (2022) ChatGPT launched – machine learning
+                </div>
+        </div>
+    </div>
+</div>
+
+            <div class="grid-cell recent-projects-home">
+                <div class="carousel-header">
+                    <h2 class="section-label">RECENT PROJECTS</h2>
+                </div>
+                <div class="featured-projects" id="featured-projects-container">
+                </div>
+            </div>
+        </section>
+
+        <section class="editorial-grid secondary-grid">
+            <div class="grid-cell highlights">
+                <h2 class="section-label">HIGHLIGHTS</h2>
+                <p class="update-meta"><a href="https://lightupthenorth.com/festivals/lightwaves/">↳ LIGHTWAVES FESTIVAL 2025</a></p>
+                <div class="highlight-image">
+                    <img src="images/LightWaves/Lightwaves1.png" alt="Featured work showcase" loading="eager">
+                    <img src="images/LightWaves/Lightwaves2.png" alt="Featured work showcase" loading="eager">
+                    <img src="images/LightWaves/Lightwaves3.png" alt="Featured work showcase" loading="eager">
+                    <img src="images/LightWaves/Lightwaves4.png" alt="Featured work showcase" loading="eager">
+                    <img src="images/LightWaves/Lightwaves5.png" alt="Featured work showcase" loading="eager">
+                    <img src="images/LightWaves/Lightwaves6.png" alt="Featured work showcase" loading="eager">
+                    <img src="images/LightWaves/Lightwaves7.png" alt="Featured work showcase" loading="eager">
+                </div>
+            </div>
+
+<div class="grid-cell updates">
+    <h2 class="section-label">CURRENT FOCUS</h2>
+    <article class="update-card">
+        <h3 class="update-title">Building a web project for an automotives dealership.</h3>
+        <p class="update-meta" onclick="toggleContent(this)">1 MIN READ</p>
+        <div class="carousel-content-text">
+            Currently developing a full-featured website for AP Autos, a local car dealership. 
+            The project includes inventory management, responsive design, contact forms, and 
+            integration with a wordpress headless CMS for easy content updates. Built with modern web 
+            technologies including HTML5, CSS3, and vanilla JavaScript for optimal performance.
+        </div>
+    </article>
+</div>
+
+            <div class="grid-cell resources">
+                <h2 class="section-label">RESOURCES</h2>
+                <ul class="resource-list">
+                    <li><a href="https://thecodingtrain.com/"><span class="resource-number">001</span> THE CODING TRAIN</a></li>
+                    <li><a href="https://openprocessing.org/"><span class="resource-number">002</span> OPENPROCESSING</a></li>
+                    <li><a href="https://docs.pi-hole.net/"><span class="resource-number">003</span> PIHOLE DOCS</a></li>
+                    <li><a href="https://natureofcode.com/"><span class="resource-number">004</span> NATURE OF CODE</a></li>
+                    <li><a href="https://p5js.org/reference/"><span class="resource-number">005</span> P5.JS REFERENCE</a></li>
+                    <li><a href="https://rapidapi.com/"><span class="resource-number">006</span> RAPID API</a></li>
+                    <li><a href="https://docs.arduino.cc/"><span class="resource-number">007</span> ARDUINO DOCS</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Ben Ellis — Creative Computing</p>
+            <p class="footer-meta">Salford / Sheffield / Halifax</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+
+</body>
+</html>

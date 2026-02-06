@@ -1,0 +1,87 @@
+<!-- work.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work — Ben Ellis</title>
+    <meta name="description" content="Portfolio of creative coding projects and experiments">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+<nav class="nav-fixed" id="main-nav">
+    <div class="nav-container">
+        <a href="home.html" class="logo" aria-label="Home">B.E</a>
+        
+        <!-- Add this hamburger button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-links" id="nav-links">
+            <li><a href="home.html" class="nav-link">HOME</a></li>
+            <li><a href="work.html" class="nav-link">WORK</a></li>
+            <li><a href="about.html" class="nav-link">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <main id="main-content" class="work-page">
+        <section class="page-header">
+            <h1 class="page-title">WORK</h1>
+        </section>
+
+        <section class="filter-controls">
+            <div class="filter-group">
+                <span class="filter-label">FILTER:</span>
+                <div class="filter-tags" id="filter-tags">
+                    <button class="filter-tag active" data-tag="all">ALL</button>
+                    <button class="filter-tag" data-tag="Generative">GENERATIVE</button>
+                    <button class="filter-tag" data-tag="Web">WEB</button>
+                    <button class="filter-tag" data-tag="Data Viz">DATA VIZ</button>
+                    <button class="filter-tag" data-tag="Backend">BACKEND</button>
+                    <button class="filter-tag" data-tag="Interaction">INTERACTION</button>
+                    <button class="filter-tag" data-tag="Python">PYTHON</button>
+                    <button class="filter-tag" data-tag="P5.js">P5.JS</button>
+                </div>
+            </div>
+            <div class="sort-controls">
+                <button class="sort-btn active" data-sort="newest">NEWEST</button>
+                <span class="sort-divider">/</span>
+                <button class="sort-btn" data-sort="oldest">OLDEST</button>
+            </div>
+        </section>
+
+        <section class="projects-grid" id="projects-grid">
+            <!-- Populated by JavaScript -->
+        </section>
+    </main>
+
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Populated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Ben Ellis — Creative Computing</p>
+            <p class="footer-meta">Salford / Sheffield / Halifax</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
