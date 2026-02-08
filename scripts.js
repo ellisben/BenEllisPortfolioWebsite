@@ -270,7 +270,7 @@ function renderFeaturedProjects() {
   container.querySelectorAll(".featured-project-card").forEach((card) => {
     card.addEventListener("click", (e) => {
       const projectId = parseInt(card.dataset.projectId);
-      window.location.href = `work.html?project=${projectId}`;
+      window.location.href = `/work/?project=${projectId}`;
     });
   });
 }
