@@ -4,6 +4,19 @@
 const projects = [
   {
     id: 1,
+    title: "70s Generative Wallpaper",
+    year: "February 2026",
+    description: "A simple generative wallpaper inspired by 70s aesthetics..",
+    fullDescription:
+      "A generative wallpaper created using p5.js, inspired by the 70s aesthetic. It really was just a simple experiment to help start a series of generative pieces I wanted to do.",
+    tags: ["P5.js", "Web"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1770569998/70s_fnsamf.png",
+    github: "https://github.com/ellisben/70sGenerativeWallpaper/tree/main/70sGenerative",
+    demo: "https://openprocessing.org/sketch/2867160",
+  },
+  {
+    id: 2,
     title: "Pastel Balloons",
     year: "February 2026",
     description: "A fun web project with poppable, pastel-colored balloons floating across the screen.",
@@ -16,7 +29,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2861797",
   },
   {
-    id: 2,
+    id: 3,
     title: "AP Autos Website",
     year: "January 2026",
     description: "Web Development project for a local car dealership.",
@@ -29,7 +42,7 @@ const projects = [
     demo: "https://apautos.org",
   },
   {
-    id: 3,
+    id: 4,
     title: "Coffee Importers Visualization",
     year: "December 2025",
     description: "Coffee Imports by Countries vs Top 3 Producers Data Visualization. ",
@@ -42,7 +55,7 @@ const projects = [
     demo: "https://benellis.dev/shaders",
   },
   {
-    id: 4,
+    id: 5,
     title: "Horse Racing API Experimentation",
     year: "May 2025",
     description: "Data Visualization of Horse Racing Data using CSS & JS.",
@@ -55,7 +68,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 5,
+    id: 6,
     title: "Koi Pond",
     year: "March 2025",
     description: "Perlin Noise Koi Fish & Lilypad's with interactive food.",
@@ -68,7 +81,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 6,
+    id: 7,
     title: "Mathematical Mountain Range",
     year: "March 2025",
     description: "Noise Mountains & Mist Waves",
@@ -81,7 +94,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2593617",
   },
   {
-    id: 7,
+    id: 8,
     title: "Back Alley Scene",
     year: "February 2025",
     description: "A simple, moving scene of a back alley with a rat and flies.",
@@ -94,7 +107,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590944",
   },
   {
-    id: 8,
+    id: 9,
     title: "Perlin Coral Reef",
     year: "February 2025",
     description: "Multiple random walkers with lerp colour to generate coral-like structures.",
