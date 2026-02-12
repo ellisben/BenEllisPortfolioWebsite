@@ -4,9 +4,22 @@
 const projects = [
   {
     id: 1,
+    title: "Generative Green",
+    year: "February 2026",
+    description: "A green generative grid using controlled randomness.",
+    fullDescription:
+      "The piece makes use of for loops, randomness and lots of rects. It iterates over a structured grid and layers multiple centered squares of varying sizes at each cell. Continuing the generative practice pieces.",
+    tags: ["P5.js", "Web"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1770940101/Screenshot_2026-02-12_234734_bk14yg.png",
+    github: "https://github.com/ellisben/Generative-Green",
+    demo: "https://openprocessing.org/sketch/2871218",
+  },
+  {
+    id: 2,
     title: "70s Generative Wallpaper",
     year: "February 2026",
-    description: "A simple generative wallpaper inspired by 70s aesthetics..",
+    description: "A simple generative wallpaper inspired by 70s aesthetics.",
     fullDescription:
       "A generative wallpaper created using p5.js, inspired by the 70s aesthetic. It really was just a simple experiment to help start a series of generative pieces I wanted to do.",
     tags: ["P5.js", "Web"],
@@ -16,7 +29,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2867160",
   },
   {
-    id: 2,
+    id: 3,
     title: "Pastel Balloons",
     year: "February 2026",
     description: "A fun web project with poppable, pastel-colored balloons floating across the screen.",
@@ -29,7 +42,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2861797",
   },
   {
-    id: 3,
+    id: 4,
     title: "AP Autos Website",
     year: "January 2026",
     description: "Web Development project for a local car dealership.",
@@ -42,7 +55,7 @@ const projects = [
     demo: "https://apautos.org",
   },
   {
-    id: 4,
+    id: 5,
     title: "Coffee Importers Visualization",
     year: "December 2025",
     description: "Coffee Imports by Countries vs Top 3 Producers Data Visualization. ",
@@ -55,7 +68,7 @@ const projects = [
     demo: "https://benellis.dev/shaders",
   },
   {
-    id: 5,
+    id: 6,
     title: "Horse Racing API Experimentation",
     year: "May 2025",
     description: "Data Visualization of Horse Racing Data using CSS & JS.",
@@ -68,7 +81,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 6,
+    id: 7,
     title: "Koi Pond",
     year: "March 2025",
     description: "Perlin Noise Koi Fish & Lilypad's with interactive food.",
@@ -81,7 +94,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 7,
+    id: 8,
     title: "Mathematical Mountain Range",
     year: "March 2025",
     description: "Noise Mountains & Mist Waves",
@@ -94,7 +107,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2593617",
   },
   {
-    id: 8,
+    id: 9,
     title: "Back Alley Scene",
     year: "February 2025",
     description: "A simple, moving scene of a back alley with a rat and flies.",
@@ -107,7 +120,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590944",
   },
   {
-    id: 9,
+    id: 10,
     title: "Perlin Coral Reef",
     year: "February 2025",
     description: "Multiple random walkers with lerp colour to generate coral-like structures.",
