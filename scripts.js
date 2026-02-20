@@ -4,6 +4,18 @@
 const projects = [
   {
     id: 1,
+    title: "The Pavilion Coffee Website",
+    year: "February 2026",
+    description: "Web development project for a UK based coffee shop.",
+    fullDescription:
+      "A fully custom website built for The Pavilion Coffee, a Warrington based coffee shop. The site features a single page design with smooth scrolling and responsive layouts for all media. Key functionalities include a menu display, image gallery, contact buttons and a intergrated google map section. Built using HTML, CSS and Javascript.",
+    tags: ["Web", "Interaction"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1771606965/fdd624c4-f5a3-4896-9fa6-33da0137b587.png",
+    demo: "https://thepavilioncoffee.co.uk",
+  },
+  {
+    id: 2,
     title: "Coloured Cubes",
     year: "February 2026",
     description: "A quick experimental project working with WEBGL",
@@ -15,7 +27,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2875950",
   },
   {
-    id: 2,
+    id: 3,
     title: "Generative Green",
     year: "February 2026",
     description: "A green generative grid using controlled randomness.",
@@ -28,7 +40,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2871218",
   },
   {
-    id: 3,
+    id: 4,
     title: "70s Generative Wallpaper",
     year: "February 2026",
     description: "A simple generative wallpaper inspired by 70s aesthetics.",
@@ -41,7 +53,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2867160",
   },
   {
-    id: 4,
+    id: 5,
     title: "Pastel Balloons",
     year: "February 2026",
     description: "A fun web project with poppable, pastel-colored balloons floating across the screen.",
@@ -54,7 +66,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2861797",
   },
   {
-    id: 5,
+    id: 6,
     title: "AP Autos Website",
     year: "January 2026",
     description: "Web Development project for a local car dealership.",
@@ -67,7 +79,7 @@ const projects = [
     demo: "https://apautos.org",
   },
   {
-    id: 6,
+    id: 7,
     title: "Coffee Importers Visualization",
     year: "December 2025",
     description: "Coffee Imports by Countries vs Top 3 Producers Data Visualization. ",
@@ -80,7 +92,7 @@ const projects = [
     demo: "https://benellis.dev/shaders",
   },
   {
-    id: 7,
+    id: 8,
     title: "Horse Racing API Experimentation",
     year: "May 2025",
     description: "Data Visualization of Horse Racing Data using CSS & JS.",
@@ -93,7 +105,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 8,
+    id: 9,
     title: "Koi Pond",
     year: "March 2025",
     description: "Perlin Noise Koi Fish & Lilypad's with interactive food.",
@@ -106,7 +118,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 9,
+    id: 10,
     title: "Mathematical Mountain Range",
     year: "March 2025",
     description: "Noise Mountains & Mist Waves",
@@ -119,7 +131,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2593617",
   },
   {
-    id: 10,
+    id: 11,
     title: "Back Alley Scene",
     year: "February 2025",
     description: "A simple, moving scene of a back alley with a rat and flies.",
@@ -132,7 +144,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590944",
   },
   {
-    id: 11,
+    id: 12,
     title: "Perlin Coral Reef",
     year: "February 2025",
     description: "Multiple random walkers with lerp colour to generate coral-like structures.",
