@@ -4,6 +4,18 @@
 const projects = [
   {
     id: 1,
+    title: "Coloured Cubes",
+    year: "February 2026",
+    description: "A quick experimental project working with WEBGL",
+    fullDescription:
+      "Similarly to the generative green piece, this project makes use of for loops and colour palletes, but with the addition of WEBGL to create 3D cubes. I also wanted to start doing some animated pieces, so this is a introduction to that. The cubes rotate on the X and Y axis, with the rotation speed influenced by framecount, creating a interesting visual effect. ",
+    tags: ["P5.js", "Web", "Interaction"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1771605987/b5f2709f-669e-4b17-9c21-0c687c8191ce.png",
+    demo: "https://openprocessing.org/sketch/2875950",
+  },
+  {
+    id: 2,
     title: "Generative Green",
     year: "February 2026",
     description: "A green generative grid using controlled randomness.",
@@ -16,7 +28,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2871218",
   },
   {
-    id: 2,
+    id: 3,
     title: "70s Generative Wallpaper",
     year: "February 2026",
     description: "A simple generative wallpaper inspired by 70s aesthetics.",
@@ -29,7 +41,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2867160",
   },
   {
-    id: 3,
+    id: 4,
     title: "Pastel Balloons",
     year: "February 2026",
     description: "A fun web project with poppable, pastel-colored balloons floating across the screen.",
@@ -42,7 +54,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2861797",
   },
   {
-    id: 4,
+    id: 5,
     title: "AP Autos Website",
     year: "January 2026",
     description: "Web Development project for a local car dealership.",
@@ -55,7 +67,7 @@ const projects = [
     demo: "https://apautos.org",
   },
   {
-    id: 5,
+    id: 6,
     title: "Coffee Importers Visualization",
     year: "December 2025",
     description: "Coffee Imports by Countries vs Top 3 Producers Data Visualization. ",
@@ -68,7 +80,7 @@ const projects = [
     demo: "https://benellis.dev/shaders",
   },
   {
-    id: 6,
+    id: 7,
     title: "Horse Racing API Experimentation",
     year: "May 2025",
     description: "Data Visualization of Horse Racing Data using CSS & JS.",
@@ -81,7 +93,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 7,
+    id: 8,
     title: "Koi Pond",
     year: "March 2025",
     description: "Perlin Noise Koi Fish & Lilypad's with interactive food.",
@@ -94,7 +106,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 8,
+    id: 9,
     title: "Mathematical Mountain Range",
     year: "March 2025",
     description: "Noise Mountains & Mist Waves",
@@ -107,7 +119,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2593617",
   },
   {
-    id: 9,
+    id: 10,
     title: "Back Alley Scene",
     year: "February 2025",
     description: "A simple, moving scene of a back alley with a rat and flies.",
@@ -120,7 +132,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590944",
   },
   {
-    id: 10,
+    id: 11,
     title: "Perlin Coral Reef",
     year: "February 2025",
     description: "Multiple random walkers with lerp colour to generate coral-like structures.",
@@ -398,9 +410,7 @@ ${
 }
 
 <div class="modal-links">
-  <a href="${
-    project.github
-  }" class="modal-link" target="_blank" rel="noopener">GitHub →</a>
+  ${project.github ? `<a href="${project.github}" class="modal-link" target="_blank" rel="noopener">GitHub →</a>` : ''}
   <a href="${
     project.demo
   }" class="modal-link" target="_blank" rel="noopener">Live Demo →</a>
