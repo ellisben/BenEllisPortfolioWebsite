@@ -835,6 +835,16 @@ MODAL
   position: relative;
 }
 
+.modal-p5-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-p5-preview canvas {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Soft vignette on modal image */
 .modal-preview::after {
   content: '';

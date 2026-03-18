@@ -4,6 +4,42 @@
 const projects = [
   {
     id: 1,
+    title: "Gen Grid",
+    year: "March 2026",
+    description: "A generative P5 project that makes use of noise to rotate traingles randomly on a rect grid. Zoom and refresh controlled by the mouse scroll and click functions.",
+    fullDescription:
+      "This is a generative projec that has been done millions of times by P5 coders, I just wanted to do my own version. It makes use of noise rotation to rotate triangles randomly on the grid. I then intergrated some mouse functions to allow for mouse refresh, then added zoom with the scroll wheel (something I hadn't done before). Overal, simple but fun project to make with some nice interaction.",
+    tags: ["P5.js", "Generative", "Interaction"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1773830717/efc99f4a-939c-4c7a-a332-ffea6a1007dc.png",
+    demo: "https://openprocessing.org/sketch/2897650",
+  },
+  {
+    id: 2,
+    title: "Confetti",
+    year: "March 2026",
+    description: "A practice run of experimenting with noise rotation throughout grids, later to be used in the Gen Grid project.",
+    fullDescription:
+      "As a follow up to a lot of the Generative Grid experiments I have been doing, this time I intergrated random rotation, using noise, to create a confetti-like look. Not much more to say about this one, just a good guideline for further use in other grids.",
+    tags: ["P5.js", "Generative"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1773830691/422dbc48-ec4e-4e2a-bb3c-4c4c31723a1f.png",
+    demo: "https://openprocessing.org/sketch/2897140",
+  },
+  {
+    id: 3,
+    title: "Tangled Worms",
+    year: "March 2026",
+    description: "A generative P5 project with random walkers built up from a trail of ellipses.",
+    fullDescription:
+      "This project was inspired by my previous Koi Pond project, where I used random walkers to create a natural, organic movement. I wanted to create a game similar to Snake.io. Throughout that process, when I added the randomness to the header point of the snake class, they randomly tangled up and provided an interesting visual effect, and when accompanied with a vibrant colour pallete, this looked great.",
+    tags: ["P5.js", "Generative"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1773830663/0fa298d7-c2db-43f6-807b-3d7a8cc0a71a.png",
+    demo: "https://openprocessing.org/sketch/2885632",
+  },
+  {
+    id: 4,
     title: "Colourful Generative Slider",
     year: "February 2026",
     description: "A P5 experimental project, similar to Generative Green but making use of sliders and probability change.",
@@ -15,7 +51,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2880812",
   },
   {
-    id: 2,
+    id: 5,
     title: "The Pavilion Coffee Website",
     year: "February 2026",
     description: "Web development project for a UK based coffee shop.",
@@ -27,7 +63,7 @@ const projects = [
     demo: "https://thepavilioncoffee.co.uk",
   },
   {
-    id: 3,
+    id: 6,
     title: "Coloured Cubes",
     year: "February 2026",
     description: "A quick experimental project working with WEBGL",
@@ -39,7 +75,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2875950",
   },
   {
-    id: 4,
+    id: 7,
     title: "Generative Green",
     year: "February 2026",
     description: "A green generative grid using controlled randomness.",
@@ -52,7 +88,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2871218",
   },
   {
-    id: 5,
+    id: 8,
     title: "70s Generative Wallpaper",
     year: "February 2026",
     description: "A simple generative wallpaper inspired by 70s aesthetics.",
@@ -65,7 +101,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2867160",
   },
   {
-    id: 6,
+    id: 9,
     title: "Pastel Balloons",
     year: "February 2026",
     description: "A fun web project with poppable, pastel-colored balloons floating across the screen.",
@@ -78,7 +114,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2861797",
   },
   {
-    id: 7,
+    id: 10,
     title: "AP Autos Website",
     year: "January 2026",
     description: "Web Development project for a local car dealership.",
@@ -91,7 +127,7 @@ const projects = [
     demo: "https://apautos.org",
   },
   {
-    id: 8,
+    id: 11,
     title: "Coffee Importers Visualization",
     year: "December 2025",
     description: "Coffee Imports by Countries vs Top 3 Producers Data Visualization. ",
@@ -104,7 +140,7 @@ const projects = [
     demo: "https://benellis.dev/shaders",
   },
   {
-    id: 9,
+    id: 12,
     title: "Horse Racing API Experimentation",
     year: "May 2025",
     description: "Data Visualization of Horse Racing Data using CSS & JS.",
@@ -117,7 +153,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 10,
+    id: 13,
     title: "Koi Pond",
     year: "March 2025",
     description: "Perlin Noise Koi Fish & Lilypad's with interactive food.",
@@ -130,7 +166,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 11,
+    id: 14,
     title: "Mathematical Mountain Range",
     year: "March 2025",
     description: "Noise Mountains & Mist Waves",
@@ -143,7 +179,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2593617",
   },
   {
-    id: 12,
+    id: 15,
     title: "Back Alley Scene",
     year: "February 2025",
     description: "A simple, moving scene of a back alley with a rat and flies.",
@@ -156,7 +192,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590944",
   },
   {
-    id: 13,
+    id: 16,
     title: "Perlin Coral Reef",
     year: "February 2025",
     description: "Multiple random walkers with lerp colour to generate coral-like structures.",
