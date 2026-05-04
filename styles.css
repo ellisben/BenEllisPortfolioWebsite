@@ -259,7 +259,7 @@ ol {
   font-size: var(--text-xs);
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--fg);
   margin-bottom: var(--space-lg);
   font-weight: 500;
 }
@@ -505,7 +505,7 @@ ol {
 .slideshow-btn {
   background: rgba(0, 0, 0, 0.5);
   border: none;
-  color: white;
+  color: var(--fg);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -1205,6 +1205,7 @@ RESPONSIVE
   
   .section-label {
     margin-bottom: var(--space-md);
+    color: var(--fg);
   }
   
   .carousel-title {
