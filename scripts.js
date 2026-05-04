@@ -54,9 +54,9 @@ const projects = [
     id: 5,
     title: "Gen Grid",
     year: "March 2026",
-    description: "A generative P5 project that makes use of noise to rotate traingles randomly on a rect grid. Zoom and refresh controlled by the mouse scroll and click functions.",
+    description: "A generative P5 project that makes use of noise to rotate traingles randomly on a rect grid.",
     fullDescription:
-      "This is a generative project that has been done millions of times by P5 coders, I just wanted to do my own version. It makes use of noise rotation to rotate triangles randomly on the grid. I then intergrated some mouse functions to allow for mouse refresh, then added zoom with the scroll wheel (something I hadn't done before). Overal, simple but fun project to make with some nice interaction.",
+      "This is a generative project that has been done millions of times by P5 coders, I just wanted to do my own version. It makes use of noise rotation to rotate triangles randomly on the grid. I then intergrated some mouse functions to allow for mouse refresh, then added zoom with the scroll wheel (something I hadn't done before).",
     tags: ["P5.js", "Generative", "Interaction"],
     type: "image",
     image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1773830717/efc99f4a-939c-4c7a-a332-ffea6a1007dc.png",
