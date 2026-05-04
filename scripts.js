@@ -4,6 +4,42 @@
 const projects = [
   {
     id: 1,
+    title: "Three.js Car Simulator",
+    year: "April 2026",
+    description: "A 3D car simulator built using Three.js, featuring custom driving mechanics and Cannon.js physics.",
+    fullDescription:
+      "Built for my XR Design module, this project is a 3D city driving simulator that utlises Three.js for rendering car and enviroment models and Cannon.js for the physics and driving mechanics. Realistic car controls were implemented, including gradual acceleration and braking and steering sensitivity.",
+    tags: ["Web", "Three.js", "Interaction"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1777897110/d4632243-70a7-4afe-9938-b1f641903048.png",
+    demo: "https://youtu.be/HRiA6R33xs8",
+  },
+  {
+    id: 2,
+    title: "Full-Stack Music Recognition App",
+    year: "April 2026",
+    description: "A full-stack music recognition app built using the AudD API, JavaScript and Node.js.",
+    fullDescription:
+      "This music recognition app was built for my Full-Stack module. It allows users to upload audio files/URLs and receive information about the songs in the audio. This included album art, song title, artist and streaming platforms. The frontend was built using vanilla JavaScript, HTML and CSS, while the backend was built using Node.js and Express.",
+    tags: ["Full-Stack", "Web", "Interaction"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1777895976/31ee5d44-1636-4c26-a2d8-75bb7f9c5c2c.png",
+    demo: "https://youtu.be/hq27lvXRnSU",
+  },
+  {
+    id: 3,
+    title: "AI Recipe Extractor",
+    year: "April 2026",
+    description: "A multi-stage AI project that extracts formatted recipes from short-form content.",
+    fullDescription:
+      "This project makes use of multiple AI models: A custom fine-tuned DistilBERT model, WhisperX and InstaFoodRoBERTa. A 7 stage pipeline carries out the process of downloading, transcribing, extracting and formatting recipes from short-form content. The final output is a formatted recipe with ingredients and instructions.",
+    tags: ["Python", "Backend", "AI"],
+    type: "image",
+    image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1777895266/651a4bd8-fa62-4e1c-b96d-dda2990e6247.png",
+    demo: "https://youtu.be/gGqq2qLnyVg",
+  },
+  {
+    id: 4,
     title: "Digital Camo Generator",
     year: "March 2026",
     description: "A digital camo generator with 5 colour options, created using P5.js. Built from Gen Grid structure.",
@@ -15,7 +51,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2899176",
   },
   {
-    id: 2,
+    id: 5,
     title: "Gen Grid",
     year: "March 2026",
     description: "A generative P5 project that makes use of noise to rotate traingles randomly on a rect grid. Zoom and refresh controlled by the mouse scroll and click functions.",
@@ -27,7 +63,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2897650",
   },
   {
-    id: 3,
+    id: 6,
     title: "Confetti",
     year: "March 2026",
     description: "A practice run of experimenting with noise rotation throughout grids, later to be used in the Gen Grid project.",
@@ -39,7 +75,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2897140",
   },
   {
-    id: 4,
+    id: 7,
     title: "Tangled Worms",
     year: "March 2026",
     description: "A generative P5 project with random walkers built up from a trail of ellipses.",
@@ -51,7 +87,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2885632",
   },
   {
-    id: 5,
+    id: 8,
     title: "Colourful Generative Slider",
     year: "February 2026",
     description: "A P5 experimental project, similar to Generative Green but making use of sliders and probability change.",
@@ -63,19 +99,19 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2880812",
   },
   {
-    id: 6,
+    id: 9,
     title: "The Pavilion Coffee Website",
     year: "February 2026",
     description: "Web development project for a UK based coffee shop.",
     fullDescription:
       "A fully custom website built for The Pavilion Coffee, a Warrington based coffee shop. The site features a single page design with smooth scrolling and responsive layouts for all media. Key functionalities include a menu display, image gallery, contact buttons and a intergrated google map section. Built using HTML, CSS and Javascript.",
-    tags: ["Web", "Interaction"],
+    tags: ["Web"],
     type: "image",
     image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1771606965/fdd624c4-f5a3-4896-9fa6-33da0137b587.png",
     demo: "https://thepavilioncoffee.co.uk",
   },
   {
-    id: 7,
+    id: 10,
     title: "Coloured Cubes",
     year: "February 2026",
     description: "A quick experimental project working with WEBGL",
@@ -87,7 +123,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2875950",
   },
   {
-    id: 8,
+    id: 11,
     title: "Generative Green",
     year: "February 2026",
     description: "A green generative grid using controlled randomness.",
@@ -100,7 +136,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2871218",
   },
   {
-    id: 9,
+    id: 12,
     title: "70s Generative Wallpaper",
     year: "February 2026",
     description: "A simple generative wallpaper inspired by 70s aesthetics.",
@@ -113,7 +149,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2867160",
   },
   {
-    id: 10,
+    id: 13,
     title: "Pastel Balloons",
     year: "February 2026",
     description: "A fun web project with poppable, pastel-colored balloons floating across the screen.",
@@ -126,20 +162,20 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2861797",
   },
   {
-    id: 11,
+    id: 14,
     title: "AP Autos Website",
     year: "January 2026",
     description: "Web Development project for a local car dealership.",
     fullDescription:
       "A fully custom website built for AP Autos, a local car dealership. The site features a clean, modern design with responsive layouts for mobile and desktop. Key functionalities include a inventory display, contact forms, and integration with headless CMS. Built using HTML, CSS, and JavaScript.",
-    tags: ["Web", "Interaction"],
+    tags: ["Web"],
     type: "image",
     image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1770393449/APAutos_fnny2h.png",
     github: "https://github.com/benellis/data-sonification",
     demo: "https://apautos.org",
   },
   {
-    id: 12,
+    id: 15,
     title: "Coffee Importers Visualization",
     year: "December 2025",
     description: "Coffee Imports by Countries vs Top 3 Producers Data Visualization. ",
@@ -152,20 +188,20 @@ const projects = [
     demo: "https://benellis.dev/shaders",
   },
   {
-    id: 13,
+    id: 16,
     title: "Horse Racing API Experimentation",
     year: "May 2025",
     description: "Data Visualization of Horse Racing Data using CSS & JS.",
     fullDescription:
       "An experimental project created during my Backend Development module. It involved fetching horse racing data from a public API and visualizing it using JavaScript and CSS. The project explores different ways to represent data visually, focusing on clarity.",
-    tags: ["Web", "DataViz", "Backend"],
+    tags: ["Web", "DataViz", "Full-Stack"],
     type: "image",
     image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1770393449/HorseRacing_f0imh0.png",
     github: "https://github.com/ellisben/HorseRacingAPIExperimentation",
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 14,
+    id: 17,
     title: "Koi Pond",
     year: "March 2025",
     description: "Perlin Noise Koi Fish & Lilypad's with interactive food.",
@@ -178,7 +214,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590885",
   },
   {
-    id: 15,
+    id: 18,
     title: "Mathematical Mountain Range",
     year: "March 2025",
     description: "Noise Mountains & Mist Waves",
@@ -191,7 +227,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2593617",
   },
   {
-    id: 16,
+    id: 19,
     title: "Back Alley Scene",
     year: "February 2025",
     description: "A simple, moving scene of a back alley with a rat and flies.",
@@ -204,7 +240,7 @@ const projects = [
     demo: "https://openprocessing.org/sketch/2590944",
   },
   {
-    id: 17,
+    id: 20,
     title: "Perlin Coral Reef",
     year: "February 2025",
     description: "Multiple random walkers with lerp colour to generate coral-like structures.",
