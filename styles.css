@@ -235,14 +235,22 @@ ol {
 
 .editorial-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   border-top: var(--border-width) solid var(--border);
   max-width: var(--container-max);
   margin: 0 auto;
 }
 
-.secondary-grid {
-  margin-top: 0;
+/* Home page: 2-col layout */
+.home-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Full-width cell within a grid */
+.span-full {
+  grid-column: 1 / -1;
+  border-right: none;
+  border-top: var(--border-width) solid var(--border);
 }
 
 .grid-cell {
@@ -457,69 +465,6 @@ ol {
   color: var(--muted);
 }
 
-/* Highlights */
-.highlight-image {
-  width: 100%;
-  height: 400px;
-  background-color: var(--border);
-  overflow: hidden;
-  border: var(--border-width) solid var(--border);
-  margin-top: var(--space-lg);
-  position: relative;
-}
-
-/* Vignette + green tint overlay on the slideshow */
-.highlight-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at center, transparent 40%, rgba(30, 45, 36, 0.65) 100%),
-    linear-gradient(to bottom, rgba(74, 95, 82, 0.15) 0%, rgba(74, 95, 82, 0.35) 100%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-.highlight-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(0.75) brightness(0.88) contrast(1.05);
-  transition: filter var(--transition-slow);
-}
-
-.highlight-image img.active {
-  filter: saturate(0.8) brightness(0.9) contrast(1.05);
-}
-
-/* Slideshow Navigation */
-.slideshow-nav {
-  position: absolute;
-  bottom: var(--space-md);
-  right: var(--space-md);
-  display: flex;
-  gap: var(--space-sm);
-  z-index: 10;
-}
-
-.slideshow-btn {
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: var(--fg);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s;
-}
-
-.slideshow-btn:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
-
 /* Updates */
 .update-card {
   margin-top: var(--space-lg);
@@ -537,26 +482,6 @@ ol {
   font-family: var(--font-mono);
   color: var(--muted);
   letter-spacing: 0.05em;
-}
-
-/* Resources */
-.resource-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  margin-top: var(--space-lg);
-}
-
-.resource-list li {
-  font-size: var(--text-xs);
-  letter-spacing: 0.05em;
-  color: var(--muted);
-  font-family: var(--font-mono);
-}
-
-.resource-number {
-  color: var(--border);
-  margin-right: var(--space-xs);
 }
 
 /* ==========================================
@@ -1078,16 +1003,8 @@ RESPONSIVE
   :root {
     --text-hero: clamp(3rem, 12vw, 8rem);
   }
-  .editorial-grid,
   .about-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-cell:nth-child(2) {
-    border-right: none;
-  }
-  .grid-cell:nth-child(3) {
-    grid-column: 1 / -1;
-    border-right: none;
   }
   .about-cell:nth-child(2) {
     border-right: none;

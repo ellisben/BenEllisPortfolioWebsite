@@ -259,7 +259,6 @@ const projects = [
 // ==========================================
 let currentFilter = "all";
 let currentSort = "newest";
-let currentCarouselIndex = 0;
 
 // ==========================================
 // NAVIGATION ACTIVE STATE
@@ -311,66 +310,6 @@ function toggleContent(element) {
   }
 }
 
-function initCarousel() {
-  const prevBtn = document.querySelector('[data-direction="prev"]');
-  const nextBtn = document.querySelector('[data-direction="next"]');
-  const items = document.querySelectorAll(".carousel-item");
-
-  if (!prevBtn || !nextBtn || items.length === 0) return;
-
-  function updateCarousel() {
-    const track = document.querySelector(".carousel-track");
-    items.forEach((item, index) => {
-      item.classList.toggle("active", index === currentCarouselIndex);
-    });
-
-    // Adjust the transform property to shift the carousel
-    if (window.innerWidth <= 768) {
-      // On mobile, ensure proper width calculation
-      const trackWidth = track.parentElement.offsetWidth;
-      track.style.transform = `translateX(-${currentCarouselIndex * trackWidth}px)`;
-    } else {
-      const itemWidth = items[0].offsetWidth;
-      track.style.transform = `translateX(-${currentCarouselIndex * itemWidth}px)`;
-    }
-
-    prevBtn.disabled = currentCarouselIndex === 0;
-    nextBtn.disabled = currentCarouselIndex === items.length - 1;
-
-    // Close all expanded content when changing slides
-    const allContent = document.querySelectorAll('.carousel-content-text');
-    const allMeta = document.querySelectorAll('.carousel-meta');
-    allContent.forEach(content => content.classList.remove('expanded'));
-    allMeta.forEach(meta => meta.classList.remove('expanded'));
-  }
-
-  prevBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    if (currentCarouselIndex > 0) {
-      currentCarouselIndex--;
-      updateCarousel();
-    }
-  });
-
-  nextBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    if (currentCarouselIndex < items.length - 1) {
-      currentCarouselIndex++;
-      updateCarousel();
-    }
-  });
-
-  // Re-calculate on window resize
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      updateCarousel();
-    }, 250);
-  });
-
-  updateCarousel();
-}
 // ==========================================
 // FEATURED PROJECTS (HOME)
 // ==========================================
@@ -378,7 +317,7 @@ function renderFeaturedProjects() {
   const container = document.getElementById("featured-projects-container");
   if (!container) return;
 
-  const featured = projects.slice(0, 2);
+  const featured = projects.slice(0, 3);
 
   container.innerHTML = featured
     .map(
@@ -559,60 +498,6 @@ function initModal() {
 }
 
 // ==========================================
-// HIGHLIGHT SLIDESHOW
-// ==========================================
-function initHighlightSlideshow() {
-  const highlightImage = document.querySelector('.highlight-image');
-  if (!highlightImage) return;
-  
-  const images = highlightImage.querySelectorAll('img');
-  if (images.length <= 1) return;
-  
-  let currentImageIndex = 0;
-  
-  // Show only the current image
-  function showImage(index) {
-    images.forEach((img, i) => {
-      img.style.display = i === index ? 'block' : 'none';
-    });
-  }
-  
-  // Create and insert navigation buttons
-  const nav = document.createElement('div');
-  nav.className = 'slideshow-nav';
-  nav.innerHTML = `
-    <button class="slideshow-btn prev" aria-label="Previous image">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5"/>
-      </svg>
-    </button>
-    <button class="slideshow-btn next" aria-label="Next image">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5"/>
-      </svg>
-    </button>
-  `;
-  highlightImage.appendChild(nav);
-  
-  // Initialize
-  showImage(0);
-  
-  // Navigation handlers
-  const prevBtn = nav.querySelector('.prev');
-  const nextBtn = nav.querySelector('.next');
-  
-  prevBtn.addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    showImage(currentImageIndex);
-  });
-  
-  nextBtn.addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    showImage(currentImageIndex);
-  });
-}
-
-// ==========================================
 // MOBILE MENU TOGGLE
 // ==========================================
 function initMobileMenu() {
@@ -649,13 +534,11 @@ function initMobileMenu() {
 // Update the DOMContentLoaded to include initMobileMenu
 document.addEventListener("DOMContentLoaded", () => {
   setActiveNavLink();
-  initCarousel();
   renderFeaturedProjects();
   renderProjectsGrid();
   initFilters();
   initModal();
   initMobileMenu();
-  initHighlightSlideshow();
 
   // Check for project query parameter and open modal if present
   const urlParams = new URLSearchParams(window.location.search);
