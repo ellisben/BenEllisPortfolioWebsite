@@ -12,7 +12,7 @@ const projects = [
     tags: ["Web", "Three.js", "Interaction"],
     type: "image",
     image: "https://res.cloudinary.com/dpmfwmz9e/image/upload/v1777897110/d4632243-70a7-4afe-9938-b1f641903048.png",
-    demo: "https://youtu.be/HRiA6R33xs8",
+    demo: "https://ellisben.github.io/Three-Car-Sim/",
   },
   {
     id: 2,
