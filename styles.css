@@ -22,7 +22,7 @@
   --fg: #c2d4c9;
   --muted: #99afa3;
   --border: #6b7e73;
-  --accent: #c2d4c9;
+  --accent: #ccd3cf;
 
   /* Typography */
   --font-sans: "AlteHaasGrotesk", sans-serif;
@@ -182,7 +182,7 @@ ol {
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
-  transition: color var(--transition-fast);
+  
 }
 
 .nav-link::after {
@@ -192,18 +192,15 @@ ol {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: var(--accent);
-  transition: width var(--transition-base);
 }
 
-.nav-link:hover,
-.nav-link.active {
-  color: var(--accent);
+.nav-link:hover {
+  color: #e4dfdf;
 }
-
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
+  
 }
 
 /* ==========================================
@@ -1131,7 +1128,8 @@ RESPONSIVE
   
   .featured-project-image {
     height: 250px;
-    width: 65%;
+    width: 100%;
+    margin: 0 auto;
   }
   
   .highlight-image {
